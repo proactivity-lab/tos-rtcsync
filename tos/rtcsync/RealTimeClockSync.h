@@ -5,6 +5,8 @@
 #ifndef REALTIMECLOCKSYNC_H_
 #define REALTIMECLOCKSYNC_H_
 
+#include "time64.h"
+
 #ifndef AMID_RTC
 	#define AMID_RTC 0x80
 #endif // AMID_RTC
@@ -20,3 +22,4 @@ typedef nx_struct RTCSync_t {
 } RTCSync_t;
 
 #endif // REALTIMECLOCKSYNC_H_
+
