@@ -13,8 +13,8 @@ generic module RealTimeClockSyncP() {
 implementation {
 
 	#define __MODUUL__ "rtcsync"
-    #define __LOG_LEVEL__ ( LOG_LEVEL_RealTimeClockSyncP & BASE_LOG_LEVEL )
-    #include "log.h"
+	#define __LOG_LEVEL__ ( LOG_LEVEL_RealTimeClockSyncP & BASE_LOG_LEVEL )
+	#include "log.h"
 
 	event message_t* Receive.receive(message_t* msg, void* payload, uint8_t len) {
 		if(len == sizeof(RTCSync_t)) {
